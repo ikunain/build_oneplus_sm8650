@@ -156,9 +156,9 @@ for f in kernel_platform/{common,msm-kernel,external/dtc}/scripts/setlocalversio
 done
 # 修改内核名
 info "修改内核名..."
-sed -i '$s|echo "\$res"|echo "$KERNEL_SUFFIX"|' kernel_platform/common/scripts/setlocalversion            
-sed -i '$s|echo "\$res"|echo "$KERNEL_SUFFIX"|' kernel_platform/msm-kernel/scripts/setlocalversion
-sed -i '$s|echo "\$res"|echo "$KERNEL_SUFFIX"|' kernel_platform/external/dtc/scripts/setlocalversion
+sed -i '$s|echo "-android14-11-o-g1132d864665d"|echo "$KERNEL_SUFFIX"|' kernel_platform/common/scripts/setlocalversion            
+sed -i '$s|echo "-android14-11-o-g1132d864665d"|echo "$KERNEL_SUFFIX"|' kernel_platform/msm-kernel/scripts/setlocalversion
+sed -i '$s|echo "-android14-11-o-g1132d864665d"|echo "$KERNEL_SUFFIX"|' kernel_platform/external/dtc/scripts/setlocalversion
 
 
 # 设置SukiSU
